@@ -117,4 +117,4 @@ async def helpcommand(interaction): # ตอบรับหลังจากก
 server_on()
 
 
-bot.run(os.getenve('TOKEN'))
+bot.run(os.getenv('TOKEN'))
