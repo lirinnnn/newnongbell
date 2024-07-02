@@ -73,6 +73,9 @@ async def on_message(message):
     elif mes == '555':  # ถามอื่นๆเพิ่มเติม
         await message.channel.send("หัวเราะให้เยอะๆนะคะ คุณจะได้มีความสุขมากๆค่ะคุณ " + str(message.author.name))
 
+    elif mes == 'พี่ลิไปไหน':  # ถามอื่นๆเพิ่มเติม
+        await message.channel.send("แท็กเรียกพี่ลิเลยค่ะ เขาอยู่ แค่เขาติดเกมอื่นค่ะคุณ " + str(message.author.name))
+
 
     await bot.process_commands(message)
     # น้องบอท ทำคำสั่ง event แล้วไปทำคำสั่ง bot command ต่อค่ะ
