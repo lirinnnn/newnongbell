@@ -90,6 +90,10 @@ async def on_message(message):
 async def หวัดดีเบล(ctx):    # ต้องสอดคล้อง on massage ถึงจะใช้งานได้
     await ctx.send(f"กรุณาพิมพ์ / ตามด้วย น้องเบลช่วยที ค่ะคุณ {ctx.author.name}!")
 
+@bot.command()
+async def clear(ctx, limit=10) :
+     await ctx.channel.purge(limit=limit)
+
 # slash Command
 
 @bot.tree.command(name='วิธีใช้งานดิสนี้') # คอมมานถามชื่อ ตอบด้วยชื่อ
