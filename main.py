@@ -14,6 +14,7 @@ async def on_ready():
     print("Bot Online!")
     synced = await bot.tree.sync()
     print(f"{len(synced)} command(s)")
+    await bot.change_presence(activity=discord.Game(name="Dota 2"))
 
 
 @bot.event
